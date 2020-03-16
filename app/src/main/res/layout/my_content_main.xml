@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/my_app_bar">
+
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txt_title_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/top_round"
+            android:padding="10dp"
+            android:text="@string/label_title"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_title"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bottom_round"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:hint="@string/hint_title"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="#7C7979"
+            android:textSize="18sp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title_label" />
+
+        <RelativeLayout
+            android:id="@+id/rly_genre_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_title">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_alignParentStart="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_genre_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_round"
+                    android:padding="10dp"
+                    android:text="Genre:"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/edt_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_round"
+                    android:hint="Enter the category here:"
+                    android:inputType="textCapCharacters"
+                    android:padding="10dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextBlack"
+                    android:textColorHint="#7C7979"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_date_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_round"
+                    android:padding="10dp"
+                    android:text="Date:"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/left_corner_bottom_round"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:hint="Enter date:"
+                        android:inputType="date"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textColorHint="#7C7979"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="18sp" />
+                    <Button
+                        android:id="@+id/btn_date_picker"
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/right_corner_rounded_button"
+                        android:drawableRight="@drawable/ic_date_range_black_14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_description_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/top_round"
+            android:padding="10dp"
+            android:text="Description:"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rly_genre_date" />
+
+        <EditText
+            android:id="@+id/edt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bottom_round"
+            android:hint="Enter your description:"
+            android:inputType="textLongMessage|textMultiLine|textAutoComplete"
+            android:padding="10dp"
+            android:singleLine="false"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="#7C7979"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_description_label" />
+
+        <Button
+            android:id="@+id/btn_image_browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/rounded_corner_button"
+            android:padding="10dp"
+            android:text="Browse"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_description" />
+
+        <Button
+            android:id="@+id/btn_image_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/rounded_corner_button"
+            android:padding="10dp"
+            android:text="Camera"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/btn_image_browse"
+            app:layout_constraintTop_toBottomOf="@+id/edt_description" />
+
+        <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bottom_round"
+            android:contentDescription="Selected Image"
+            app:layout_constraintBottom_toTopOf="@+id/btn_post"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_image_browse" />
+
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_corner_button"
+            android:padding="10dp"
+            android:text="Upload"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

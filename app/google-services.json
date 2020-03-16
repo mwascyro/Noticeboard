@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "357906957117",
+    "firebase_url": "https://noticeboard-ceb95.firebaseio.com",
+    "project_id": "noticeboard-ceb95",
+    "storage_bucket": "noticeboard-ceb95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357906957117:android:da903551e6dcfd1b2ebb54",
+        "android_client_info": {
+          "package_name": "com.ctech.noticeboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357906957117-o5i7cm1b69rr3e8vmkcsva44v0amv8sc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ctech.noticeboard",
+            "certificate_hash": "237483ce0aab27e456a1396d4d187b4fc45d9782"
+          }
+        },
+        {
+          "client_id": "357906957117-61042i7nfufsri4nfs70vl2fjm359jem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbJodeUj8Ul4vnfxzYFekk9C2eZ97MgG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357906957117-61042i7nfufsri4nfs70vl2fjm359jem.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ctech.noticeboard.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.ctech.noticeboard.ui.news.NewsFragment"
+        android:label="@string/menu_news"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/nav_event"
+        android:name="com.ctech.noticeboard.ui.event.EventFragment"
+        android:label="@string/menu_events"
+        tools:layout="@layout/fragment_event" />
+
+    <fragment
+        android:id="@+id/nav_notice"
+        android:name="com.ctech.noticeboard.ui.notice.NoticeFragment"
+        android:label="@string/menu_notice"
+        tools:layout="@layout/fragment_notice" />
+
+    <fragment
+        android:id="@+id/nav_upload"
+        android:name="com.ctech.noticeboard.ui.upload.UploadFragment"
+        android:label="@string/menu_upload"
+        tools:layout="@layout/fragment_upload" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.ctech.noticeboard.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.ctech.noticeboard.ui.feedback.FeedbackFragment"
+        android:label="@string/menu_feedback"
+        tools:layout="@layout/fragment_feedback" />
+</navigation>

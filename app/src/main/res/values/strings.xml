@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SMARTNOTICEBOARD</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Your Name</string>
+    <string name="nav_header_subtitle">Username</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="menu_news">News</string>
+    <string name="menu_events">Events</string>
+    <string name="menu_notice">Notice</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_upload">Upload</string>
+
+
+    <string name="label_title">Title:</string>
+    <string name="hint_title">Enter Title Here:</string>
+    <string name="image_desc">Notice Image</string>
+    <string name="label_genre">Genre:</string>
+    <string name="label_date">Date:</string>
+    <string name="label_desc">Description</string>
+
+    <string name="title">Title.</string>
+    <string name="genre">Genre.</string>
+    <string name="date">Date.</string>
+    <string name="desc">Description.</string>
+    
+</resources>
